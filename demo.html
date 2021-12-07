@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- import css: -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/demo-global.css">
+    <title>Trading Card</title>
+</head>
+
+<body>
+    <div id="container"> 
+        <section id="inputs">
+            <label for="name">Name</label>
+            <input id="name" value="The Know">
+
+            <label for="avatar">Image</label>
+            <select id="avatar">
+                <option value="assets/turtle.png">Turtle</option>
+                <option value="assets/psychic.png" selected>Psychic</option>
+                <option value="assets/thor.png">Thor</option>
+                <option value="assets/skeleton.png">Skeleton</option>
+                <option value="assets/ninja.png">Ninja</option>
+                <option value="assets/hero.png">Hero</option>
+                <option value="assets/princess.png">Princess</option>
+                <option value="assets/ranger.png">Ranger</option>
+                <option value="assets/devil.png">Devil</option>
+                <option value="assets/flat-top.png">Flat Top</option>
+            </select>
+            
+            <label for="description">Description</label>
+            <textarea id="description"></textarea>
+
+            <label for="theme">Theme</label>
+            <select id="theme">
+                <option value="forest">Forest</option>
+                <option value="ocean">Ocean</option>
+                <option value="mountains">Mountains</option>
+                <option value="space" selected>Space</option>
+            </select>
+
+            <button id="export-button">Export</button>
+        </section>
+
+        <article id="character" class="ocean">
+            <h2 id="name-display">The Know</h2>
+            <img src="assets/psychic.png">
+            <p id="description-display">
+                Pries secrets and hidden fears using 
+                advanced telepathic techniques. Can also
+                apply compulsion when the subject has a corresponding
+                fear.
+            </p>        
+        </article>
+    </div>  
+</body>
+
+</html>
