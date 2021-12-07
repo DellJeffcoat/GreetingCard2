@@ -15,9 +15,9 @@ avatarSelect.addEventListener('change', () => {
 
 // Description
 const descriptionTextarea = document.getElementById('description-textarea');
-const description = document.getElementById('description');
+const descriptionDisplay = document.getElementById('description-display');
 descriptionTextarea.addEventListener('input', () => {
-  description.textContent = descriptionTextarea.value;
+  descriptionDisplay.textContent = descriptionTextarea.value;
 });
 
 // Theme
@@ -30,6 +30,10 @@ themeSelect.addEventListener('change', () => {
 
 //Export
 const exportButton = document.getElementById('export-button');
-exportButton.addEventListener('click', () => {
-  console.log(character);
+exportButton.addEventListener('click', async () => {
+  const dataUrl = await domtoimage.toPng(character);
+  const link = document.createElement('a');
+  link.download = nameInput.value + '.png';
+  link.href = dataUrl;
+  link.click();
 });
