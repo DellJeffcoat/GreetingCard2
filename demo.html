@@ -12,13 +12,15 @@
 </head>
 
 <body>
+    <h1>Character Builder</h1> 
+
     <div id="container"> 
         <section id="inputs">
-            <label for="name">Name</label>
-            <input id="name" value="The Know">
+            <label for="name-input">Name</label>
+            <input id="name-input" value="The Know">
 
-            <label for="avatar">Image</label>
-            <select id="avatar">
+            <label for="avatar-select">Avatar</label>
+            <select id="avatar-select">
                 <option value="assets/turtle.png">Turtle</option>
                 <option value="assets/psychic.png" selected>Psychic</option>
                 <option value="assets/thor.png">Thor</option>
@@ -31,11 +33,11 @@
                 <option value="assets/flat-top.png">Flat Top</option>
             </select>
             
-            <label for="description">Description</label>
-            <textarea id="description"></textarea>
+            <label for="description-textarea">Description</label>
+            <textarea id="description-textarea"></textarea>
 
-            <label for="theme">Theme</label>
-            <select id="theme">
+            <label for="theme-select">Theme</label>
+            <select id="theme-select">
                 <option value="forest">Forest</option>
                 <option value="ocean">Ocean</option>
                 <option value="mountains">Mountains</option>
@@ -47,7 +49,7 @@
 
         <article id="character" class="ocean">
             <h2 id="name-display">The Know</h2>
-            <img src="assets/psychic.png">
+            <img id="avatar-image" src="assets/psychic.png">
             <p id="description-display">
                 Pries secrets and hidden fears using 
                 advanced telepathic techniques. Can also
@@ -56,6 +58,8 @@
             </p>        
         </article>
     </div>  
+
+    <script src="demo-app.js" type="module"></script>
 </body>
 
 </html>
