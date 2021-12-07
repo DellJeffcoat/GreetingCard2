@@ -47,7 +47,6 @@ File | Purpose
 `index.html` | Main page with html and semantic elements
 `global.css` | css for your page
 `app.js`     | JavaScript to dynamically change presentation
-`export.js`  | Pre-built function for converting a displayed set of elements to an image
 
 ## Commit
 
@@ -59,5 +58,34 @@ build-in VSCode sidebar tool:
 
 To "push" to GitHub, either hit "Sync" after committing, or hit the recycle wheel button in the lower left corner.
 
-## Steps
+## Assignment
 
+Your job is to create a greeting card build. You should have:
+- At least one input
+- At least one select
+- Set a theme using a class
+- Update an image, either using a theme or an `<img>` tag
+
+Remember to work in small chunks! 
+
+One approach to break down the problem:
+
+## 1. Design a static greeting card
+
+Make one example of your greeting card. This will help you to figure out what the needed elements and styling are.
+
+## 2. Begin making each part dynamic
+
+1. Choose one aspect of your greeting card
+1. Create a form control for setting that aspect
+1. Make sure both the source form control and the target elements have ids
+1. In `app.js`, get each element by id
+1. Add the right event listener for that type of form control
+1. Inside the event listener, write the code to copy the value from the source form control to the target element
+
+## 3. STRETCH: Export Image
+
+Look at the demo for how to download the greeting card as an image:
+1. Add the `<script>` tag for domtoimage
+1. Add a click event listener to the export button
+1. Look at the code in the demo project, but pass in the element that has your greeting card.
