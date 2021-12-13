@@ -3,6 +3,14 @@
 :root {
   background-image: url(https://th.bing.com/th/id/R.f1c24752b6ebb623783ab217dcfe3d09?rik=X7hni%2bjBK%2bNAHg&riu=http%3a%2f%2fwallpapercave.com%2fwp%2f8GzcmK7.jpg&ehk=ixq0fVpKxZS27qoTVrTjMtJw3zejyI%2fLB6cmmdKIBP8%3d&risl=&pid=ImgRaw&r=0);
   background-size: cover;
+  
+}
+h1 {
+  text-align: center;
+  font-style: oblique;
+  font-size: 80px;
+  color: rgb(28, 170, 28);
+  ;
 }
 
 * {
@@ -30,9 +38,9 @@ body {
       }
     
 
-    #image {
-      height: 400px;
-      width: 400px;
+    #img {
+      height: 100px;
+      width: 100px;
     }
 
     #inputs {
@@ -47,16 +55,48 @@ body {
       width: 100%;
       align-content: center 50,50;
       margin-bottom: 2px;
+      font-family: cursive;
+      color: black;
     }
 
     label {
       text-transform: uppercase;
       margin: 26px,;
       height: 20px;
+      color: white;
     }
 
     textarea {
       resize:none;
       height: 60px;
+      align-content: center;
+      color: black;
       
     }
+    
+    #character h2 {
+      margin: 0 0 20px 0;
+      font-family:fantasy
+      font-size: 60px;
+      color: white;
+      text-align: center;
+      font-style: oblique;
+    
+    }
+
+    #character p {
+      margin: 20px 40 40 40;
+      font-size: 24px;
+      color: white;
+      align-content:flex-start;
+    }
+
+    .forest {
+      background:green;
+      color: green;
+      border:white;
+      font-family: cursive;
+      font-size: 1.4rem;
+    };
+
+    
