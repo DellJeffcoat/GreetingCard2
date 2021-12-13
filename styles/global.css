@@ -11,6 +11,52 @@
 
 body {
   background-blend-mode:saturation;
-  padding-inline: 10px;
+  padding-inline: 20px;
+    }
+
+    #container {
+      font-display:inherit;
+      justify-items: center;
+      display: grid;
+      color: black;
+    }
+
+    @media (min-width: 500px) {
+      #container {
+        grid-template-columns: 50% 50%;
+        grid-row:auto;
+        align-items: center;
+        grid-gap: 85px;
+      }
     
-}
+
+    #image {
+      height: 400px;
+      width: 400px;
+    }
+
+    #inputs {
+      width: 100%;
+      max-width: 400px;
+      height:100%;
+      max-height: 300;
+    }
+
+    label, input, select textarea {
+      display: block;
+      width: 100%;
+      align-content: center 50,50;
+      margin-bottom: 2px;
+    }
+
+    label {
+      text-transform: uppercase;
+      margin: 26px,;
+      height: 20px;
+    }
+
+    textarea {
+      resize:none;
+      height: 60px;
+      
+    }
