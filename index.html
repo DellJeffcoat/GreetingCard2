@@ -8,12 +8,49 @@
     <!-- import css: -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/global.css">
-    <title>Your App</title>
+    <title>Greetiong Cards 101</title>
 </head>
 
 <body>
-    Implement you app here, <a href="demo.html">See the demo</a>
+    <h1>Greeting Cards 101</h1>
+<div id="container">
+    <section id="inputs">
+        <label for="name-input">Name</label>
+        <input id="name-input" value="">
 
+        <label for="character-select">Character</label>
+        <select id ="character-select">
+            <option value="assets/mario.png">Mario</option>
+            <option value="assets/lilo.png">Lilo</option>
+            <option value="assets/grinch.png">Grinch</option>
+            <option value="assets/dog.png"> Dog</option>
+            <option value="assets/tree.png">Tree</option>
+            <option value="assets/simpson.png">Simpsons</option>
+        </select>
+
+    <label for="description-textarea">Description</label>
+    <textarea id="description-textarea"></textarea>
+    
+    <label for="theme-select">Theme</label>
+    <select id=" theme-select">
+        <option value="forest">Forest</option>
+        <option value="lava">Lava</option>
+        <option value="snow">Snow</option>
+        <option value="gold">Gold</option>
+    </select>
+    
+    <button id="export-button">Export</button>
+</section>
+
+<article id="character" class="space">
+    <h2 id="name-header">Name Here</h2>
+    <img id="character-image" src="assets/simpson.png">
+    <p id="description-display"> ...
+
+    </p>
+
+</article>
+</div>
 
 
 

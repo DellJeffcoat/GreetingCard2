@@ -1,11 +1,16 @@
 /* font @import */
 
 :root {
-  /* css variables with theme colors,
-    names have to start with "--" */
-  --color-1: #b9af9e;
+  background-image: url(https://th.bing.com/th/id/R.f1c24752b6ebb623783ab217dcfe3d09?rik=X7hni%2bjBK%2bNAHg&riu=http%3a%2f%2fwallpapercave.com%2fwp%2f8GzcmK7.jpg&ehk=ixq0fVpKxZS27qoTVrTjMtJw3zejyI%2fLB6cmmdKIBP8%3d&risl=&pid=ImgRaw&r=0);
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
+  background-blend-mode:saturation;
+  padding-inline: 10px;
     
 }
